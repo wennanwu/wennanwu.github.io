@@ -6,11 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I study seismogenic structures offshore and onshore Taiwan to better understand the Taiwan orogeny and improve seismic hazard assessments.
-
-My research focuses on earthquake source characteristics in both subduction zones and intraplate settings, with an emphasis on the western boundary of the Philippine Sea Plate. These studies aim to shed light on earthquake nucleation and triggering processes.
-
-I am also interested in seismic tomography to image the Earth's crust and upper mantle.
+My research focuses on understanding seismogenic structures and earthquake processes in and around Taiwan, with the goals of contributing to a broader understanding of lithospheric dynamics and improving seismic hazard assessments. I analyze seismic waveforms, relocate earthquakes, and determine focal mechanisms, in conjunction with velocity structure imaging.
 
 Outside of research, I enjoy watching movies, listening to film soundtracks, and practicing traditional health-preserving exercises.
 

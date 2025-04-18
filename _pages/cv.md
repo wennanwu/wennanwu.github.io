@@ -34,17 +34,17 @@ Academic Service and Synergistic Activity
 * Served as reviewer for BSSA, EPS, GRL, GRAPY, GSAB, JAES, JGR-SE, SRL, PAG, TAO, and Tectonophysics.
 * Judge of Outstanding Student Paper Awards: Taiwan Geosciences Assembly (2011-2017)
 * Serve in Editor Board: Member of the Editorial Board Mistral Service Press (2015 - present)
-* Served as Consultant
-  * National Standards Review Committee number of Ocean Bottom Seismograph, Ministry of Natural Resources, China (2019)
+* Served as Consultant:
+  * National Standards Review Committee number of Ocean Bottom Seismograph, Ministry of Natural Resources, China, 2019.
   * Workshop on Taiwan SSHAC Level 3 Project, invited by the National Center for Research on Earthquake Engineering, Taipei, 2017.
   * Workshop on Seismogenesis of the Subduction Zone in South Taiwan, invited by the Institute of Nuclear Energy Research and the Institute of Geophysics, National Central University, Jhongli, 2014.
   * Workshop on Seismogenesis of the Subduction Zone in North Taiwan, invited by the Institute of Nuclear Energy Research and SINOTECH Engineering Consultants Inc., Taipei, 2013.
 
 Honor and Fellowship
 ======
-*	Academia Sinica Postdoctoral Research Fellowship, 2011-2012
-*	Outstanding Graduate Research Scholarship, National Central University, 2008
-*	Recipient of the Graduate Students Study Abroad Program sponsored by the National Science Council, 2008
+*	Academia Sinica Postdoctoral Research Fellowship, 2011-2012.
+*	Outstanding Graduate Research Scholarship, NCU, 2008.
+*	Recipient of the Graduate Students Study Abroad Program sponsored by the National Science Council, 2008.
 
 Field Experience
 ======

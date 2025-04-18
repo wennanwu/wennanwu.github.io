@@ -15,7 +15,7 @@ Education
 *	1999/09 – 2001/06: M.S. Institute of Geophysics, NCU, Taiwan
 *	1995/09 – 1999/06: B.S. Department of Oceanography, National Taiwan Ocean University, Taiwan
 
-Work experience
+Work Experience
 ======
 *	2024/08 – present: Postdoctoral fellow, Department of Earth Sciences, NCU, Taiwan
 *	2022/03 – 2023/12: Postdoctoral fellow, Center for Environmental Studies (CES), NCU, Taiwan
@@ -28,49 +28,25 @@ Work experience
 *	2003/07 – 2004/08: Research assistant, Institute of Geophysics, NCU, Taiwan
 *	2001/10 – 2003/06: Artillery Second Lieutenant, compulsory military service, ROC Army
 *	1999/09 – 2001/06: Teaching assistant, Institute of Geophysics, NCU, Taiwan
-
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
-Skills
+Field Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+*	Research cruise, Ocean Bottom Seismometer (OBS) recovery South China Sea (03/2023; 22 days)
+*	Research cruise, OBS recovery off SW Taiwan+ (03/2017; 2 days)
 
-Publications
+Academic Service and Synergistic Activity
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* Served as reviewer for BSSA, EPS, GRL, GRAPY, GSAB, JAES, JGR-SE, SRL, PAG, TAO, and Tectonophysics.
+*	Judge of Outstanding Student Paper Awards: Taiwan Geosciences Assembly (2011-2017)
+*	Serve in Editor Board: Member of the Editorial Board Mistral Service Press (2015 - present)
+*	Served as Consultant
+	* National Standards Review Committee number of Ocean Bottom Seismograph, Ministry of Natural Resources, China (2019)
+  * Workshop on Taiwan SSHAC Level 3 Project, invited by the National Center for Research on Earthquake Engineering, Taipei, 2017.
+  * Workshop on Seismogenesis of the Subduction Zone in South Taiwan, invited by the Institute of Nuclear Energy Research and the Institute of Geophysics, National Central University, Jhongli, 2014.
+  *	Workshop on Seismogenesis of the Subduction Zone in North Taiwan, invited by the Institute of Nuclear Energy Research and SINOTECH Engineering Consultants Inc., Taipei, 2013.
+
+Honor and Fellowship
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+*	Academia Sinica Postdoctoral Research Fellowship, 2011-2012
+*	Outstanding Graduate Research Scholarship, National Central University, 2008
+*	Recipient of the Graduate Students Study Abroad Program sponsored by the National Science Council, 2008

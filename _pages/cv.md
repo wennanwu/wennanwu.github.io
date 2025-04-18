@@ -41,9 +41,9 @@ Academic Service and Synergistic Activity
 *	Serve in Editor Board: Member of the Editorial Board Mistral Service Press (2015 - present)
 *	Served as Consultant
 	* National Standards Review Committee number of Ocean Bottom Seismograph, Ministry of Natural Resources, China (2019)
-  * Workshop on Taiwan SSHAC Level 3 Project, invited by the National Center for Research on Earthquake Engineering, Taipei, 2017.
-  * Workshop on Seismogenesis of the Subduction Zone in South Taiwan, invited by the Institute of Nuclear Energy Research and the Institute of Geophysics, National Central University, Jhongli, 2014.
-  *	Workshop on Seismogenesis of the Subduction Zone in North Taiwan, invited by the Institute of Nuclear Energy Research and SINOTECH Engineering Consultants Inc., Taipei, 2013.
+        * Workshop on Taiwan SSHAC Level 3 Project, invited by the National Center for Research on Earthquake Engineering, Taipei, 2017.
+        * Workshop on Seismogenesis of the Subduction Zone in South Taiwan, invited by the Institute of Nuclear Energy Research and the Institute of Geophysics, National Central University, Jhongli, 2014.
+        * Workshop on Seismogenesis of the Subduction Zone in North Taiwan, invited by the Institute of Nuclear Energy Research and SINOTECH Engineering Consultants Inc., Taipei, 2013.
 
 Honor and Fellowship
 ======

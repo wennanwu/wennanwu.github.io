@@ -26,7 +26,7 @@ author:
   name             : "Wen-Nan Wu / 吳文男"
   pronouns         : # example: "she/her"  
   bio              : "“Don’t only practice your art, but force your way into its secrets, for it and knowledge can raise men to the divine.”－Ludwig van Beethoven"
-  location         : "Earth"
+  location         : "ChungLi, Taiwan"
   employer         : "National Central University"
   uri              : "/images/profile.png"
   email            : "wennan.v.wu@gmail.com" 
@@ -38,7 +38,7 @@ author:
   orcid            : "https://orcid.org/0000-0001-7493-7689"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Wen-Nan-Wu?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development

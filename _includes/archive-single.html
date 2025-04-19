@@ -53,8 +53,6 @@
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
-
-{# Generate download links and add separators dynamically #}
 {% assign download_links = "" %}
 {% if post.paperurl %}
   {% assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
@@ -68,9 +66,8 @@
   {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' %}
 {% endif %}
 
-{# Display the links, preceded by a period and space, if any links exist #}
 {% if download_links != "" %}
-  . {{ download_links }}
+  a {{ download_links }}
 {% endif %}
 
 

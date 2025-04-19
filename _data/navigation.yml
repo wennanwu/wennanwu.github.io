@@ -12,8 +12,8 @@ main:
     url: /cv/
     
   - title: "Research"  
-    #url: /research/
-    url: /portfolio/
+    url: /research/
+    #url: /portfolio/
 
   - title: "Publications"
     url: /publications/

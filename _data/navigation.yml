@@ -16,7 +16,8 @@ main:
     #url: /portfolio/
 
   - title: "Publications"
-    url: /publications/
+    url: /publications_wwu/
+    #url: /publications/
     
   - title: "Teaching"
     url: /teaching/    

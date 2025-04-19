@@ -3,7 +3,8 @@ title: "Test --- "
 collection: publications
 category: manuscripts
 permalink: publication_list01
-excerpt: '**2.** **Wu, W.-N.**, H. Kao, S.-K. Hsu, C.-L. Lo, and H.-W. Chen (2010), Spatial variation of the crustal stress field along the Ryukyu-Taiwan-Luzon convergent boundary, Journal of Geophysical Research: Solid Earth, 115, B11401, doi:10.1029/2009JB007080.' paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+excerpt: '**2.** **Wu, W.-N.**, H. Kao, S.-K. Hsu, C.-L. Lo, and H.-W. Chen (2010), Spatial variation of the crustal stress field along the Ryukyu-Taiwan-Luzon convergent boundary, Journal of Geophysical Research: Solid Earth, 115, B11401, doi:10.1029/2009JB007080.'
+paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

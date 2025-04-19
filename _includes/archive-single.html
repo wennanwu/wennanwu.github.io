@@ -52,7 +52,6 @@
     {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">
         {{ post.excerpt | markdownify -}}
-
         {%- assign download_links = "" -%}
         {%- if post.paperurl -%}
           {%- assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' -%}

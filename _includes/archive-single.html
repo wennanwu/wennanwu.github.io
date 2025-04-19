@@ -34,24 +34,76 @@
       {% endif %}
     </h2>
     
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {# === 開始：原先顯示教學或出版物概況的區塊 === #}
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      {# === 原先顯示 "Published in ..." 的行被註解掉 === #}
+      {% comment %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      {% endcomment %}
+    {% elsif post.date %}
+      <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
+    {# === 結束：原先顯示教學或出版物概況的區塊 === #}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {# === 開始：顯示文獻摘要 (excerpt) 並嵌入下載連結 === #}
+    {% if post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify }} {# 這裡顯示文獻摘要本身 #}
+
+        {# === 開始：生成並顯示下載連結的程式碼 === #}
+        {% assign download_links = "" %}
+        {% if post.paperurl %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
+        {% endif %}
+        {% if post.slidesurl %}
+          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' %}
+        {% endif %}
+        {% if post.bibtexurl %}
+          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' %}
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+        {% if download_links != "" %}
+          . {{ download_links }} {# 如果有下載連結，在前面加上點和空格 #}
+        {% endif %}
+        {# === 結束：生成並顯示下載連結的程式碼 === #}
+
+      </p> {# 文獻摘要段落結束 #}
+
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      {# 這個分支是當 read_more 啟用時的顯示方式，包含了 Read more 連結 #}
+      <p class="archive__item-excerpt" itemprop="description"><p> {# 外層和內層的段落開始 #}
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }} {# 顯示文獻摘要，並移除 Markdown 可能產生的 <p> 標籤 #}
+
+        {# === 開始：生成並顯示下載連結的程式碼 === #}
+        {% assign download_links = "" %}
+        {% if post.paperurl %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
+        {% endif %}
+        {% if post.slidesurl %}
+          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' %}
+        {% endif %}
+        {% if post.bibtexurl %}
+          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+          {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' %}
+        {% endif %}
+
+        {% if download_links != "" %}
+          . {{ download_links }} {# 如果有下載連結，在前面加上點和空格 #}
+        {% endif %}
+        {# === 結束：生成並顯示下載連結的程式碼 === #}
+
+      <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong> {# Read more 連結 #}
+      </p></p> {# 內層和外層的段落結束 #}
     {% endif %}
-    
+    {# === 結束：顯示文獻摘要並嵌入下載連結 === #}
+
+    {# === 開始：原先顯示 Recommended Citation 和下載連結的整個區塊被註解掉 === #}
+    {% comment %}
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
@@ -79,6 +131,8 @@
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
+    {% endcomment %}
+    {# === 結束：原先顯示 Recommended Citation 和下載連結的整個區塊被註解掉 === #}
 
   </article>
 </div>

@@ -38,82 +38,29 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-    {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          {% if post.venue and post.date %} 
-            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-          {% endif %}
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-    
+        {% if post.collection == 'teaching' %}
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' %}
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.date %}
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-
-
-{% if post.excerpt and site.read_more != 'enabled' %}
-  <p class="archive__item-excerpt" itemprop="description">
-    {{ post.excerpt | markdownify }} {# 這裡顯示文獻摘要本身 #}
-
-    {# === 開始：生成並顯示下載連結的程式碼 === #}
-    {% assign download_links = "" %}
-    {% if post.paperurl %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
-    {% endif %}
-    {% if post.slidesurl %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' %}
-    {% endif %}
-    {% if post.bibtexurl %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' %}
-    {% endif %}
-
-    {% if download_links != "" %}
-      . {{ download_links }} {# 如果有下載連結，在前面加上點和空格 #}
-    {% endif %}
-    {# === 結束：生成並顯示下載連結的程式碼 === #}
-
-  </p> {# 文獻摘要段落結束 #}
-
-{% elsif post.excerpt and site.read_more == 'enabled' %}
-  {# 這個分支是當 read_more 啟用時的顯示方式，包含了 Read more 連結 #}
-  <p class="archive__item-excerpt" itemprop="description"><p> {# 外層和內層的段落開始 #}
-    {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }} {# 顯示文獻摘要，並移除 Markdown 可能產生的 <p> 標籤 #}
-
-    {# === 開始：生成並顯示下載連結的程式碼 === #}
-    {% assign download_links = "" %}
-    {% if post.paperurl %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
-    {% endif %}
-    {% if post.slidesurl %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' %}
-    {% endif %}
-    {% if post.bibtexurl %}
-      {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
-      {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' %}
-    {% endif %}
-
-    {% if download_links != "" %}
-      . {{ download_links }} {# 如果有下載連結，在前面加上點和空格 #}
-    {% endif %}
-    {# === 結束：生成並顯示下載連結的程式碼 === #}
-
-  <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong> {# Read more 連結 #}
-  </p></p> {# 內層和外層的段落結束 #}
-
-{% endif %} {# 文獻摘要顯示區塊的主要判斷結束 #}
-    
-
-    
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-         {% elsif post.citation and post.slidesurl and post.bibtexurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.citation and post.paperurl and post.slidesurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.citation and post.paperurl and post.bibtexurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.citation and post.paperurl %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+    {% elsif post.citation and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
     {% elsif post.citation and post.slidesurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
@@ -121,7 +68,11 @@
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
-       {% elsif post.slidesurl and post.bibtexurl %}
+    {% elsif post.paperurl and post.bibtexurl %}
+      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.paperurl %}
+      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+    {% elsif post.slidesurl and post.bibtexurl %}
       <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.slidesurl %}
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>

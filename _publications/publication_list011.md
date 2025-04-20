@@ -3,7 +3,7 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**11.** ***Wu,* W.-N. (2015), Comment on the paper by Kavitha and Raghukanth “Regional level forecasting of seismic energy release”, Acta Geod Geophys, 51, 773-775, doi:10.1007/s40328-015-0157-x.'
+excerpt: '**11.** ***Wu, W.-N.** (2015), Comment on the paper by Kavitha and Raghukanth “Regional level forecasting of seismic energy release”, Acta Geod Geophys, 51, 773-775, doi:10.1007/s40328-015-0157-x.'
 paperurl: 'http://academicpages.github.io/files/paper011.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'

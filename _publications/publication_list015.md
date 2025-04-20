@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**15.** Lin, J.-Y., Y.-F. Chen, C.-C. Su, S.-J., Chin, W.-B., Cheng, **W.-N. Wu**, C.-W. Liang, H.-S. Hsieh, S.-K. Hsu, and Y.-C. Lin (2018), Seismic site response of submarine slope offshore southwestern Taiwan, ***Terrestrial Atmosphere Oceanic Sciences***, 29, 1, 51-63, doi:10.3319/TAO.2017.05.09.01.'
+paperurl: 'http://academicpages.github.io/files/paper015.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

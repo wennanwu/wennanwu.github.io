@@ -6,6 +6,7 @@ permalink: /research/research01
 #venue: "University 1, Department"
 #date: 2014-01-01
 #location: "City, Country"
+pdf_url: '/files/your-research-paper.pdf'
 ---
 
 Updated on April 20, 2025.
@@ -13,9 +14,11 @@ Updated on April 20, 2025.
 Seismogenic Structures
 ======
 Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan.
-+ xx
-+ xxx
-+ xx
++ Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan.
+{% if page.pdf_url %}
+[PDF]({{ page.pdf_url }})
+{% endif %}
+
 
 Tectonic Stress Tensor Inversion
 ======

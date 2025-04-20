@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**8.** Lin, J.-Y., J.-C. Sibuet, S.-K. Hsu, and **W.-N. Wu** (2014), Could a Sumatra-like megathrust earthquake occur in the south Ryukyu subduction zone? ***Earth Planets and Space***, 66:49, doi:10.1186/1880-5981-66-49.'
+paperurl: 'http://academicpages.github.io/files/paper008.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

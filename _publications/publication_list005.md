@@ -3,7 +3,7 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**5.** D’Amico S., B. Orecchio, D. Presti, G. Neri, **W.-N. Wu**, I. Sandu, L. Zhu, and R. B. Hermann (2013), Source parameters of small and moderate earthquakes in the area of the 2009 L’Aquila earthquake sequences (central Italy), ***Physics and Chemistry of the Earth***, 63, 77-91, doi:10.1016/j.pce.2013.02.005.
+excerpt: '**5.** D’Amico S., B. Orecchio, D. Presti, G. Neri, **W.-N. Wu**, I. Sandu, L. Zhu, and R. B. Hermann (2013), Source parameters of small and moderate earthquakes in the area of the 2009 L’Aquila earthquake sequences (central Italy), ***Physics and Chemistry of the Earth***, 63, 77-91, doi:10.1016/j.pce.2013.02.005.'
 paperurl: 'http://academicpages.github.io/files/paper001.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'

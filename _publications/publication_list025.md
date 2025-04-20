@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**25.** Doo, W.-B., Y.-S. Huang, **W.-N. Wu**, C.-Y. Cheng, C.-L. Lo, H.-F. Wang, S.-Y. Wang, H.-F, and Y.-T. Yen (2025), The significance of the high-amplitude magnetic anomaly belt in the seismotectonics of mid-west Taiwan, ***Journal of Asian Earth Sciences***, https://doi.org/10.1016/j.jseaes.2025.106598.'
+paperurl: 'http://academicpages.github.io/files/paper025.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

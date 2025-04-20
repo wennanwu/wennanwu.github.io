@@ -51,14 +51,14 @@
 
     {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify -}}{%-assign download_links = "" -%}
+        {{ post.excerpt | markdownify -}}{%- assign download_links = "" -%} {# <-- !! 請確保 {{-}} 和 {%-assign 中間沒有任何空白或換行 !! #}
         {%- if post.paperurl -%}
           {%- assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' -%}
         {%- endif -%}
         {%- if post.slidesurl -%}
           {%- if download_links != "" -%}{%- assign download_links = download_links | append: ' | ' -%}{%- endif -%}
-          {%- assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a></a>' -%} 
-          {%- endif -%}
+          {%- assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' -%} {# 已修正多餘的 </a> #}
+        {%- endif -%}
         {%- if post.bibtexurl -%}
           {%- if download_links != "" -%}{%- assign download_links = download_links | append: ' | ' -%}{%- endif -%}
           {%- assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Download Bibtex</a>' -%}
@@ -71,13 +71,13 @@
 
     {% elsif post.excerpt and site.read_more == 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description"><p>
-        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -}}{%-assign download_links = "" -%}
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -}}{%- assign download_links = "" -%} {# <-- !! 這裡也一樣，確保 {{-}} 和 {%-assign 中間沒有任何空白或換行 !! #}
         {%- if post.paperurl -%}
           {%- assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' -%}
         {%- endif -%}
         {%- if post.slidesurl -%}
           {%- if download_links != "" -%}{%- assign download_links = download_links | append: ' | ' -%}{%- endif -%}
-          {%- assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a></a>' -%}
+          {%- assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Download Slides</a>' -%} {# 已修正多餘的 </a> #}
         {%- endif -%}
         {%- if post.bibtexurl -%}
           {%- if download_links != "" -%}{%- assign download_links = download_links | append: ' | ' -%}{%- endif -%}

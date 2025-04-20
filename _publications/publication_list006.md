@@ -2,9 +2,9 @@
 #title: "Test --- "
 collection: publications
 category: manuscripts
-#permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+#permalink: publication_list00
+excerpt: '**6.** **Wu, W.-N.**, L. Zhao, and Y.-M. Wu (2013), Empirical relationships between aftershock zone dimensions and moment magnitudes for plate boundary earthquakes in Taiwan, ***Bulletin of the Seismological Society of America***, 103, doi: 10.1785/0120120173.'
+paperurl: 'http://academicpages.github.io/files/paper006.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

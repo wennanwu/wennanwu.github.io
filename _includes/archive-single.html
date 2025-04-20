@@ -34,18 +34,15 @@
       {% endif %}
     </h2>
 
-    {# === 開始：簡化的出版物顯示 (只顯示 Excerpt 和 PDF 連結) === #}
-    {# 這段程式碼取代了之前所有處理日期、場地、文摘、引用格式和下載連結的複雜區塊 #}
     {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt }} {# 直接顯示文獻引用文字，不再使用 markdownify #}
+        {{ post.excerpt }}
 
-        {% if post.paperurl %} {# 檢查是否有 PDF 連結 #}
-           &nbsp;(<a href="{{ post.paperurl }}">PDF</a>) {# 如果有，添加一個不換行空格和 (PDF) 連結 #}
+        {% if post.paperurl %}
+           &nbsp;(<a href="{{ post.paperurl }}">PDF</a>)
         {% endif %}
       </p>
     {% endif %}
-    {# === 結束：簡化的出版物顯示 === #}
 
 
   </article>

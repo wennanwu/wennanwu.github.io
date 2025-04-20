@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Research Projects"
-collection: research
+collection: Research
 #type: "Undergraduate course"
 permalink: /research/research02
 #venue: "University 1, Department"

@@ -3,7 +3,7 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**10.** Lin, J.-Y., W.-N. Wu and C.-L. Lo (2015), Megathrust earthquake potential of the Manila subduction systems revealed by the radial component of seismic moment tensor Mrr, ***Terrestrial Atmosphere Oceanic Sciences**, 26, 619-630, doi:10.3319/TAO.2013.04.29.01(TC).'
+excerpt: '**10.** Lin, J.-Y., W.-N. Wu and C.-L. Lo (2015), Megathrust earthquake potential of the Manila subduction systems revealed by the radial component of seismic moment tensor Mrr, ***Terrestrial Atmosphere Oceanic Sciences***, 26, 619-630, doi:10.3319/TAO.2013.04.29.01(TC).'
 paperurl: 'http://academicpages.github.io/files/paper010.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'

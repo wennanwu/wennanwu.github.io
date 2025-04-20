@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**18.** Lo, C.-L., **W.-N. Wu**, W.-B. Doo, Y.-S. Huang, and S.-K. Hsu (2019), Crustal stress field in Ilan Plain, NE Taiwan and the westernmost Okinawa trough- deduced from seismic stress inversion, ***Terrestrial Atmosphere Oceanic Sciences***, 30, 5, 613-619, doi:10.3319/TAO.2019.08.09.01.'
+paperurl: 'http://academicpages.github.io/files/paper018.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

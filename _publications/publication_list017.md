@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**17.** Lin, J.-Y., **W.-N. Wu**, C.-C. Su, C.-H. Tsai, H.-H. Sun, Y.-F. Chen, S.-J. Chin, and Y.-C. Lin (2019), Spatial and temporal distribution of low frequency volcanic earthquakes in the southern Okinawa Trough back-arc basin, ***Terrestrial Atmosphere Oceanic Sciences***, 30, 5, 621-631, doi:10.3319/TAO.2018.12.24.01.'
+paperurl: 'http://academicpages.github.io/files/paper017.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

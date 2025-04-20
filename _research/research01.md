@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience 1"
+title: "Lead Research Projects"
 collection: Research
 type: "Undergraduate course"
 permalink: /research/research01

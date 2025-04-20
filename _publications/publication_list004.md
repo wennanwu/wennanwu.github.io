@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 #permalink: publication_list001
 excerpt: '**4.** Lin, J.-Y. and **W.-N. Wu** (2012), Spatio-temporal distribution of seismic moment release near the source area of the 2011 Tohoku-Oki earthquake, ***Earth Planets and Space***, 64, 1067-1075, doi:10.5047/eps.2012.04.006.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+paperurl: 'http://academicpages.github.io/files/paper004.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

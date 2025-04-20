@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**22.** Doo, W.-B., C.-L. Lo, Y.-S. Huang, **W.-N. Wu**, and S.-Y. Wang (2023), Variations in the crustal structure and strength of plate coupling along the Ryukyu subduction zone, **Geoscience Letters**, 10(1), 46, doi:10.1186/s40562-023-00300-y.'
+paperurl: 'http://academicpages.github.io/files/paper022.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

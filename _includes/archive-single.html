@@ -26,7 +26,7 @@
       </div>
     {% endif %}
 
-
+{# 顯示標題 (如果是出版物則隱藏標題，您可以根據需要調整這個 unless 判斷) #}
 {% unless post.collection == 'publications' %}
 <h2 class="archive__item-title" itemprop="headline">
   {% if post.link %}
@@ -37,20 +37,62 @@
 </h2>
 {% endunless %}
 
+{# === 開始：根據 Collection 顯示不同的 metadata 或 excerpt/links === #}
 
-{% if post.collection == 'teaching' or post.collection == 'research' %}
+{# 區塊：Teaching - 使用原版 Teaching 格式 (基於 type, venue, date) #}
+{% if post.collection == 'teaching' %}
   <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-{% endif %}
 
-{% if post.excerpt %}
-  <p class="archive__item-excerpt" itemprop="description">
-    {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+{# 區塊：Research - 使用**完全相同**的原版 Teaching 格式 #}
+{% elsif post.collection == 'research' %} {# <-- 新增這個判斷區塊，用於 research #}
+  <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> {# <-- 這裡的程式碼跟上面的 teaching 區塊是完全一樣的 #}
 
-    {% if post.paperurl %}
-       &nbsp;(<a href="{{ post.paperurl }}">PDF</a>)
+{# 區塊：Publications - 使用「引用文字 (連結)」格式 #}
+{% elsif post.collection == 'publications' %}
+  {% if post.excerpt %} {# 只在 excerpt 存在時顯示 #}
+    <p class="archive__item-excerpt" itemprop="description">
+      {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -}}{%- assign download_links = "" -%} {# 顯示文獻摘要，處理 Markdown，並移除可能的 <p> 標籤 #}
+      {%- if post.paperurl -%}
+        {%- assign download_links = download_links | append: '<a href="' | append: post.paperurl | append: '">PDF</a>' -%}
+      {%- endif -%}
+      {% if post.slidesurl %}
+         {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+         {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Slides</a>' %}
+      {% endif %}
+      {% if post.bibtexurl %}
+         {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
+         {% assign download_links = download_links | append: '<a href="' | append: post.bibtexurl | append: '">Bibtex</a>' -%}
+      {% endif %}
+
+      {%- if download_links != "" -%}
+        &nbsp;({{ download_links }}) {# 如果有下載連結，在前面加上空白和括號 #}
+      {%- endif -%}
+    </p>
+  {% endif %} {# excerpt 存在時結束 #}
+
+{# 後備顯示區塊 (適用於其他 Collection 或標準文章，例如部落格文章) #}
+{% else %}
+    {# 原來的 read_time 區塊 #}
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-  </p>
-{% endif %}
+    {# 原來的 date 區塊 #}
+    {% if post.date %}
+        <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }} <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
+    {# 原來顯示 excerpt 的區塊 (使用 markdownify) #}
+    {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% endif %}
+    {# 原來顯示 read more 連結的區塊 #}
+    {% if post.excerpt %}
+       {% if site.read_more == 'enabled' %}
+         <p><a href="{{ base_path }}{{ post.url }}" rel="permalink"> {{ site.data.ui-text[site.locale].read_more | default: "Read more" }} <span class="archive__item-icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span></a></p>
+       {% endif %}
+    {% endif %}
+
+{% endif %} {# collection 判斷結束 #}
+{# === 結束：根據 Collection 顯示不同的 metadata 或 excerpt/links === #}
 
 
   </article>

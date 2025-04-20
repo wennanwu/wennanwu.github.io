@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**23.** Sibuet, J-C., S. Liu, M. Zhao, **W.-N. Wu**, Y.-M. Wu, J. Cheng and J. Wu (2024), A revolution in understanding SE Asia geodynamics since 20.5 – 18 Ma, ***Tectonophysics***, 884, 230397, doi:10.1016/j.tecto.2024.230397.'
+paperurl: 'http://academicpages.github.io/files/paper023.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

@@ -34,9 +34,10 @@
       {% endif %}
     </h2>
 
+  
     {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt }}
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
 
         {% if post.paperurl %}
            &nbsp;(<a href="{{ post.paperurl }}">PDF</a>)

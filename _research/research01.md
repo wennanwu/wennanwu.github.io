@@ -1,7 +1,7 @@
 ---
 title: "Lead Research Projects"
 collection: Research
-type: "Undergraduate course"
+#type: "Undergraduate course"
 permalink: /research/research01
 #venue: "University 1, Department"
 #date: 2014-01-01

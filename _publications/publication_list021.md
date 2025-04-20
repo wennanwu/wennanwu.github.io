@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**1.** **Wu, W.-N.**, S.-K. Hsu, C.-L. Lo, H.-W. Chen, and K.-F. Ma (2009), Plate convergence at the westernmost Philippine Sea Plate, ***Tectonophysics***, 466, 162-169, doi:10.1016/j.tecto.2007.11.011.'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**21.** **Wu, W.-N**, C.-L. Lo, W-B Doo, J-Y Lin, and S.-K. Hsu (2021), Seismogenic structure along the deformation front off SW Taiwan revealed by the aftershocks of the 2017 Tainan near-shore earthquake with ocean bottom seismometers, ***Tectonophysics***, 815, 228995, doi:10.1016/j.tecto.2021.228995.'
+paperurl: 'http://academicpages.github.io/files/paper021.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

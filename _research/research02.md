@@ -8,13 +8,25 @@ permalink: /research/research02
 #location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Updated on April 20, 2025.
 
-Heading 1
+Manila Trench Segmentation
 ======
+xxxx
 
-Heading 2
+Magnetic Anomaly Belt and Seismicity
 ======
+xxxx
 
-Heading 3
+Gravity Modelling 
 ======
+xxxx
+
+Low-frequency Volcanic Earthquake
+======
+xxxx
+
+2011 Tohoku-Oki Earthquake
+======
+xxxxxx
+

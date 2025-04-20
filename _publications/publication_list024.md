@@ -3,8 +3,8 @@
 collection: publications
 category: manuscripts
 #permalink: publication_list001
-excerpt: '**24.**,Wu, W.-N, J.-Y. Lin, W.-B. Doo, C.-L. Lo, and S.-K. Hsu (2024), Seismogenic structures along the deformation front from onshore to offshore SW Taiwan, Geoscience Letters, 11:37, doi:10.1186/s40562-024-00354-6'
-paperurl: 'http://academicpages.github.io/files/paper001.pdf'
+excerpt: '**24.**,**Wu, W.-N**, J.-Y. Lin, W.-B. Doo, C.-L. Lo, and S.-K. Hsu (2024), Seismogenic structures along the deformation front from onshore to offshore SW Taiwan, ***Geoscience Letters***, 11:37, doi:10.1186/s40562-024-00354-6'
+paperurl: 'http://academicpages.github.io/files/paper024.pdf'
 #date: 2009-10-01
 #venue: 'Journal 1'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'

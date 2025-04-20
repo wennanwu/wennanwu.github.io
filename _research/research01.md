@@ -8,13 +8,25 @@ permalink: /research/research01
 #location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+#This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+Seismogenic Structures
 ======
+xxxx
 
-Heading 2
+Tectonic Stress Tensor Inversion
 ======
+xxx
 
-Heading 3
+Seismogenic Depth
 ======
+xxx
+
+Aftershock Scaling
+======
+xxx
+
+Revised Best Estimate Method
+======
+xxxx
+=====

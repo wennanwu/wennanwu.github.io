@@ -13,6 +13,8 @@ Updated on April 20, 2025.
 Seismogenic Structures
 ======
 + Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan.
++ xxx
++ xxx
 
 Tectonic Stress Tensor Inversion
 ======

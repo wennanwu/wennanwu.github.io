@@ -8,7 +8,7 @@ venue: "University Hohai University, College of Oceanography"
 location: "Najing, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+The teaching experience from September 2018 to June 2021.
 
 The origin of continents and oceans: Introduction to Plate Tectonics (Literacy class; Fall, 2018 and 2019)
 ======

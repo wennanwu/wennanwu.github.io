@@ -40,18 +40,35 @@
   <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
 {% endif %}
 
-{% if post.collection == 'teaching' %}
-  {% if post.type and post.venue and post.date %}
-    <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+{% if post.collection == 'teaching' %} 
+  {% assign teaching_parts = "" %} 
+
+  {% if post.type and post.type != "" %} 
+    {% assign teaching_parts = teaching_parts | append: post.type %} 
   {% endif %}
 
-{% elsif post.collection == 'research' %}
-  {% if post.venue and post.date and post.location %}
-    <p> {{ post.venue }}, {{ post.date | date: "%Y" }}, {{ post.location }} </p>
+  {% if post.venue and post.venue != "" %}
+    {% if teaching_parts != "" %} {% assign teaching_parts = teaching_parts | append: ", " %} {% endif %} 
+    {% assign teaching_parts = teaching_parts | append: "<i>" | append: post.venue | append: "</i>" %} 
   {% endif %}
 
-{% elsif post.collection == 'publications' %}
-  {% if post.excerpt %}
+  {% if post.date %} 
+    {% assign formatted_year = post.date | date: "%Y" %} 
+    {% if teaching_parts != "" %} {% assign teaching_parts = teaching_parts | append: ", " %} {% endif %} 
+    {% assign teaching_parts = teaching_parts | append: formatted_year %} 
+  {% endif %}
+
+  {% if teaching_parts != "" %}
+    <p> {{ teaching_parts }} </p> 
+  {% endif %}
+
+{% elsif post.collection == 'research' %} 
+  {% if post.venue and post.venue != "" and post.date and post.location and post.location != "" %}
+    <p> {{ post.venue }}, {{ post.date | date: "%Y" }}, {{ post.location }} </p> 
+  {% endif %}
+
+{% elsif post.collection == 'publications' %} 
+  {% if post.excerpt %} 
     <p class="archive__item-excerpt" itemprop="description">
       {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -}}{%- assign download_links = "" -%}
       {%- if post.paperurl -%}
@@ -70,9 +87,9 @@
         &nbsp;({{ download_links }})
       {%- endif -%}
     </p>
-  {% endif %}
+  {% endif %} 
 
-{% else %}
+{% else %} 
     {% if post.date %}
         <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }} <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}

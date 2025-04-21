@@ -13,7 +13,7 @@ Updated on April 20, 2025.
 
 Seismogenic Structure Studies
 ======
-Seismogenic structures, encompassing active and blind faults, are subsurface geological features where tectonic stress accumulates and releases, generating earthquakes.
+Seismogenic structures, encompassing active and blind faults, are subsurface geological features where tectonic stress accumulates and releases, generating earthquakes.  
 The Significance of Seismogenic Structure Studies:
 + Research into these structures is vital for understanding earthquake mechanisms, stress dynamics, and rupture processes. This understanding is crucial for characterizing potential future seismic events, including their location, depth, magnitude, and recurrence.
 + Investigating seismogenic structures enables rigorous seismic hazard assessment and the development of effective mitigation strategies. Furthermore, studying their behavior aids in identifying potential earthquake precursors, thereby enhancing early warning systems.

@@ -10,11 +10,26 @@ location: "Najing, China"
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+The origin of continents and oceans: Introduction to Plate Tectonics (Literacy class; Fall, 2018 and 2019)
 ======
 
-Heading 2
+Marine environment, resource and climate change: Introduction to Geophysics (Introductory course for College of Oceanography freshman; Fall, 2018 and 2019)
 ======
 
-Heading 3
+Introduction to geology (Undergraduate course, Fall, 2018 and 2019)
+======
+
+Volcanology: Introduction to Volcano Seismology (Undergraduate course, Spring, 2019)
+======
+
+Geophysics: Introduction to Seismology (Undergraduate course, Spring, 2019 and 2020)
+======
+
+Marine Tectonics and Geophysics: Introduction to Seismology and Earth Structure (Graduate course; Spring, 2019 and 2020)
+======
+
+Undergraduate Research (Fall, 2019)
+======
+
+Undergraduate student mentor (Fall, 2019 – Fall, 2021)
 ======

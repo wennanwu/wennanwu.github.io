@@ -24,9 +24,19 @@ Based on relocatted seismicity and focal mechanisms, we delineated the seismogen
 + Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan. ([PDF]({{ page.pdf_url }}))
 + Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan. ([PDF]({{ page.pdf_url }}))
 
-Tectonic Stress Tensor Inversion
+Crustal Stress Field Studies Based on Focal Mechanism Solution Inversion
 ======
-xxx
+Focal mechanism solutions, which describe fault motion during earthquakes, directly indicate the stress state at the seismic source. Based on numerous focal mechanisms, researchers can invert for and infer the orientation and relative magnitudes of principal stresses within a given region.
+
+The Significance of Crustal Stress Field Studies: 
+
++ Focal mechanism solutions, which describe fault motion during earthquakes, directly indicate the stress state at the seismic source. By analyzing numerous focal mechanisms, researchers can invert for and infer the orientation and relative magnitudes of principal stresses within a given region.
++ This research is crucial for understanding regional tectonic stress fields, revealing stress distribution, concentration zones, and spatio-temporal variations, which provides fundamental insights into regional deformation and dynamics. It is vital for evaluating fault activity and seismic potential by assessing stress states on faults and identifying those prone to rupture, essential for seismic hazard assessment and active fault studies.
++ Furthermore, inverting co-seismic and post-seismic stress changes helps explain earthquake sequences and stress triggering. Variations in the stress field also offer potential physical constraints for earthquake prediction and early warning research, linking anomalous changes to earthquake nucleation processes.
+
+Based on focal mechanism solutions, we delinated the spatail variations in stress field.
++ Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan. ([PDF]({{ page.pdf_url }}))
++ Based on relocatted seismicity and focal mechanisms, we delineated the seismogenic structures from onshore to offshore SW Taiwan. ([PDF]({{ page.pdf_url }}))
 
 Seismogenic Depth
 ======

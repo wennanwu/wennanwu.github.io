@@ -26,6 +26,7 @@
       </div>
     {% endif %}
 
+{# Display Title (unless it's a publication) #}
 {% unless post.collection == 'publications' %}
 <h2 class="archive__item-title" itemprop="headline">
   {% if post.link %}
@@ -41,8 +42,8 @@
 {% endif %}
 
 {% if post.collection == 'teaching' %}
-  {% if post.venue and post.date and post.location %}
-    <p> {{ post.venue }}, {{ post.date | date: "%Y" }}, {{ post.location }} </p>
+  {% if post.type and post.venue and post.date %}
+    <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
   {% endif %}
 
 {% elsif post.collection == 'research' %}
@@ -59,7 +60,7 @@
       {%- endif -%}
       {% if post.slidesurl %}
          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
-         {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Slides</a>' %}
+         {% assign download_links = download_links | append: '<a href="' | append: post.slidesurl | append: '">Slides</a>' -%}
       {% endif %}
       {% if post.bibtexurl %}
          {% if download_links != "" %}{% assign download_links = download_links | append: ' | ' %}{% endif %}
@@ -72,7 +73,7 @@
     </p>
   {% endif %}
 
-{% else %} {# Fallback display for other collections/posts (e.g., standard blog posts) #}
+{% else %}
     {% if post.date %}
         <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }} <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}

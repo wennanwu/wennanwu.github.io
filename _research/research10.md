@@ -1,8 +1,8 @@
 ---
-title: "Lead Research Projects"
+title: "Manila Trench"
 collection: Research
 #type: "Undergraduate course"
-permalink: /research/research01
+permalink: /research/research10
 #venue: "University 1, Department"
 #date: 2014-01-01
 #location: "City, Country"

@@ -1,5 +1,5 @@
 ---
-title: "Lead Research Projects"
+title: "The 2011 Tohoku-Oki Earthquake Studies"
 collection: Research
 #type: "Undergraduate course"
 permalink: /research/research01

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Wen-Nan Wu, Ph.D."
 permalink: /cv/
 author_profile: true
 redirect_from:

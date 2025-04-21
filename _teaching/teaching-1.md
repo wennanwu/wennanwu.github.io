@@ -3,7 +3,7 @@ title: "Teaching at HHU"
 collection: teaching
 #type: "Undergraduate course"
 permalink: /teaching/teaching-1
-venue: "University Hohai University, College of Oceanography"
+venue: "Hohai University, College of Oceanography"
 #date: 2018-09-01
 location: "Najing, China"
 ---

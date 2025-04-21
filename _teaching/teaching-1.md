@@ -10,7 +10,7 @@ location: "Najing, China"
 
 The teaching experience from September 2018 to June 2021.
 
-+ Undergraduate Course
++ Literacy Class
   + The origin of continents and oceans: Introduction to Plate Tectonics (Fall, 2018 and 2019)
 
 + Introductory Course for College of Oceanography Freshman

@@ -13,7 +13,7 @@ The teaching experience from September 2018 to June 2021.
 + General Education Course
   + The origin of continents and oceans: Introduction to Plate Tectonics (Fall, 2018 and 2019)
 
-+ Introductory Course for College of Oceanography Freshman
++ Marine Sciences Freshman Orientation Course
   + Marine environment, resource and climate change: Introduction to Geophysics (Fall, 2018 and 2019)
 
 + Undergraduate Course

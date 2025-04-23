@@ -22,7 +22,7 @@ repository               : "wennanwu/wennanwu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.png"  
   name             : "Wen-Nan Wu / 吳文男"
   pronouns         : # example: "she/her"  
   bio              : "“Don’t only practice your art, but force your way into its secrets, for it and knowledge can raise men to the divine.”－Ludwig van Beethoven"
